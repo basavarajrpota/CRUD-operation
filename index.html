@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operation using JavaScript</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./App.js"></script>
+</head>
+<body>
+  <fieldset>
+    <legend>
+      <h1> Employee Details Form</h1>
+    </legend>
+
+    <form onsubmit="event.preventDefault()" autocomplete="off" id="form">
+                <div>
+                  <label>EMP Code</label>
+                  <input type="text" name="empCode" id="empCode">
+                </div>
+                <div>
+                    <label>Full Name</label>
+                    <input type="text" name="fullName" id="fullName">
+                  </div>
+                  <div>
+                    <label>Salary</label>
+                    <input type="text" name="salary" id="salary">
+                  </div>
+                  <div class="form-action-btn">
+                    <input type="submit" value="Submit" onclick="SubmitForm()">
+                    <input type="reset" value="Reset">
+                  </div>
+   </form>
+  </fieldset>
+<br> <br>
+<div id="msg"></div>
+<br>
+   <fieldset>
+    <legend>
+      <h1>Employee Information List</h1>
+    </legend>
+    <table  border="1" id="table">
+      <thead>
+      <tr>
+          <th class="col">EMP Code</th>
+          <th class="col">Full Name</th>
+          <th class="col">Salary</th>
+          <th class="col">Update</th>
+      </tr>
+    </thead>
+
+
+ </table>
+  </fieldset>
+</body>
+</html>
+<!-- //onsubmit="event.preventDefault();onFormSubmit();" -->
